@@ -1,0 +1,20 @@
+[PROJECT]
+Target=final code.hex
+Processor_Text=PIC16F877A
+CCSVersion=5.015
+Compiler=PCM
+[Target Data]
+FileList=final code.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[final code.c]
+Type=4
+[mru-list]
+1=final code.c
+[Opened Files]
+1=final code.c
+2=
+3=
+[Units]
+Count=1
+1=final code (main)

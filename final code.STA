@@ -1,0 +1,155 @@
+
+ROM used:   5571/8192 (68%)
+            5594/8192 (68%) including unused fragments
+
+            3.2 Average locations per line
+            8.4 Average locations per statement
+
+RAM used:   39/368 (11%) at main() level
+            82/368 (22%) worst case
+
+Stack used: 7 worst case (6 in main + 1 for interrupts)
+Stack size: 8
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  610   561  85  final code.c
+  671     0   0  ..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16f877a.h
+  456   100  15  ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\lcd.c
+----- -----
+ 1737   661 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     21   0    1             @delay_ms1
+ Inline         3   760  4.5  lcd_read_byte
+0     49   1    2   262  3.7  lcd_read_nibble
+0     43   1    1   399  2.4  lcd_send_nibble
+0     92   2    3   415  3.7  lcd_send_byte
+0     68   1    6   852  6.2  lcd_init
+0     18   0    4   208  6.3  lcd_gotoxy
+0     44   1    1   354  4.7  lcd_putc
+0     11   0    0    29  1.2  t1_isr
+0    225   4    0  2345  5.9  key
+1    456   8    2  1187  7.6  ultra_sonick
+0      5   0    0             @const676
+0     86   2    4             @PSTRINGC7_645
+0      7   0    0             @const678
+0      7   0    0             @const679
+0     29   1    2             @ITOF
+ Inline        14             @DIVFF
+0     31   1    4             @SFTOI
+0      7   0    0             @const687
+1    101   2    9             @PRINTF_LU_645
+1    181   3    8   409  3.7  pot
+0      1   0    0             @const694
+0      4   0    0             @const695
+ Inline         5             @MUL1616
+ Inline         5             @DIV1616
+0    117   2   13             @MULFF
+ Inline         5             @FTOSD
+0     79   1   13             @DIV3232
+0    224   4   13             @PRINTF_L32D_645FPFPF
+2    355   6   31  1261  7.7  lm35
+1     62   1    6             @DIVS1616
+1     24   0    2             @PSTRINGR_645
+1    511   9    1  2369  7.3  dc
+0      1   0    0             @const725
+0      8   0    0             @const726
+0      5   0    0             @const727
+0      1   0    0             @const728
+0      8   0    0             @const729
+0      9   0    0             @const730
+0      6   0    0             @const731
+0      5   0    0             @const732
+0     87   2    5             @PSTRINGCN7_645
+0    321   6   16             @ADDFF
+0     63   1   10             @FLT
+1    472   8    1  2344  7.8  segment
+0      1   0    0             @const742
+0      8   0    0             @const743
+0      8   0    0             @const744
+0      9   0    0             @const745
+0      9   0    0             @const746
+0      1   0    0             @const747
+0      8   0    0             @const748
+0      1   0    0             @const749
+0      8   0    0             @const750
+0      9   0    0             @const751
+0      6   0    0             @const752
+0      5   0    0             @const753
+0      1   0    0             @const754
+0      1   0    0             @const755
+0      6   0    0             @const756
+0      4   0    0             @const757
+1    101   2    1   399  2.4  stepper_move
+1    119   2    0   621  4.7  stepper
+0      1   0    0             @const761
+0      6   0    0             @const762
+2     62   1    0   252  3.1  encoder
+0      1   0    0             @const764
+0      7   0    0             @const765
+2     87   2    3   516  6.2  leds
+2     67   1    1   197  1.3  uart
+0     12   0    0             @const774
+2     88   2    4             @PSTRINGC7_9600_62_63
+0     16   0    0             @const776
+2    839  15    1  5148  4.5  MAIN
+0     10   0    0             @const781
+0      8   0    0             @const782
+0      1   0    0             @const783
+0      6   0    0             @const784
+0      6   0    0             @const785
+0      6   0    0             @const786
+0     10   0    0             @const787
+0      1   0    0             @const788
+0      7   0    0             @const789
+0      7   0    0             @const790
+0      1   0    0             @const791
+0     12   0    0             @const792
+0      4   0    0             @const793
+0      3   0    0             @const794
+0      1   0    0             @const795
+0      1   0    0             @const796
+0      6   0    0             @const797
+0      4   0    0             @const798
+0      1   0    0             @const799
+0     10   0    0             @const800
+0     10   0    0             @const801
+0      1   0    0             @const802
+0     10   0    0             @const803
+0      4   0    0             @const804
+0      4   0    0             @const805
+0      1   0    0             @const806
+0      6   0    0             @const807
+0      1   0    0             @const808
+0      1   0    0             @const809
+0      1   0    0             @const810
+0      1   0    0             @const811
+0      6   0    0             @const812
+0      4   0    0             @const813
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               20
+    Statements              661
+    Comments                286
+    Volume (V)              31838
+    Difficulty (D)          89.6
+    Effort to implement (E) 2852352
+    Time to implement (T)   44 hours, 1 minutes
+    Est Delivered Bugs (B)  7
+    Cyclomatic Complexity   69
+    Maintainability (MI)    55
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-00050    77  0  
+00051-007FF  1965  2  
+00800-00FFF  2027  21  
+01000-017FF  1498  550  
+01800-01FFF     0  2048  
+
+
+
